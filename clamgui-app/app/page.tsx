@@ -1,7 +1,8 @@
+import { Navbar } from "@/components";
+
 export default function Homepage() {
   return (
     <main>
-        <p>Hello worldsssss</p>
     </main>
   )
 }
