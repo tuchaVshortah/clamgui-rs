@@ -1,6 +1,9 @@
 export default function Homepage() {
   return (
-    <main>
-    </main>
+    <div className="m-2 bg-gray-700">
+      <h1>ClamGUI</h1>
+      <p>ClamAV GUI</p>
+
+    </div>
   )
 }
