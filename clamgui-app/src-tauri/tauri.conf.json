@@ -11,7 +11,19 @@
   },
   "tauri": {
     "allowlist": {
-      "all": false
+      "shell": {
+        "all": true,
+        "execute": true, 
+        "sidecar": true,
+        "open": true,
+        "scope": [
+          {
+            "name": "run-clamscan-on-file",
+            "cmd": "clamscan",
+            "args": [{ "validator": "\\S+" }]
+          }
+        ]
+      }
     },
     "bundle": {
       "active": true,
