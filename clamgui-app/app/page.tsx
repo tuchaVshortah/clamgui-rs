@@ -1,9 +1,11 @@
-import FileUploadForm from "@/components/scan/forms/FileUploadForm";
+import UploadForm from "@/components/scan/forms/UploadForm";
+
+const dynamic = 'force-dynamic'
 
 export default function Homepage() {
 
   return (
-    <FileUploadForm/>
+    <UploadForm/>
   )
-  
+
 }

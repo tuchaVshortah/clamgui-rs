@@ -1,9 +1,10 @@
+
 export default function FileUploadForm() {
     return (
         <div>
             <div className="mx-auto max-w-7xl px-2 sm:mt-8 sm:mb-2 sm:px-6 lg:px-8">
-                <form action="/api/scan/file" method="post" className="flex items-center space-x-6">
-                <input type="file" className="w-full text-sm text-slate-500
+                <form action="/api/scan/files" method="post" className="flex items-center space-x-6">
+                <input type="file" multiple className="w-full text-sm text-slate-500
                     file:mr-4 file:py-2 file:px-4
                     file:rounded-full file:border-0
                     file:text-sm file:font-semibold
