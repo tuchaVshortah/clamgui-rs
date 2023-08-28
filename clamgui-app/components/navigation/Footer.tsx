@@ -3,9 +3,8 @@ import Link from 'next/link'
 
 const Footer = () => {
     return (
-        <footer className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <footer className="mt-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <p>Made with love by <Link href={'https://github.com/tuchaVshortah/clamgui-rs'}>tuchaVshortah</Link>❤️</p>
-
 
             <div className='flex justify-between'>
                 <div>
