@@ -5,12 +5,12 @@ import { useState } from "react"
 
 export default function UploadForm() {
 
-    const [fileDialogEnabled, setfileDialogEnabled] = useState(true);
-    const [recursionEnabled, setrecursionEnabled] = useState(false);
+    const [fileDialogEnabled, setFileDialogEnabled] = useState(true);
+    const [recursionEnabled, setRecursionEnabled] = useState(false);
 
     function recursionToggle() {
-        setfileDialogEnabled(!fileDialogEnabled);
-        setrecursionEnabled(!recursionEnabled);
+        setFileDialogEnabled(!fileDialogEnabled);
+        setRecursionEnabled(!recursionEnabled);
     }
 
     return (
