@@ -21,6 +21,11 @@
       },
       "path": {
         "all": true
+      },
+      "fs": {
+        "readFile": true,
+        "readDir": true,
+        "exists": true
       }
     },
     "bundle": {
