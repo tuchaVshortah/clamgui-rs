@@ -11,11 +11,17 @@ export default async function fileDialog() {
         defaultPath: await downloadDir(),
     });
 
+    var paths: string[] = [];
+
     if (Array.isArray(selected)) {
+        paths = selected;
         console.log(selected)
       } else if (selected === null) {
         // user cancelled the selection
       } else {
+        paths = [selected];
         console.log(selected)
       }
+
+    return paths;
 }

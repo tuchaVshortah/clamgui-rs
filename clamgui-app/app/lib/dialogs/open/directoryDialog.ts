@@ -35,7 +35,7 @@ export default async function directoryDialog({multiple, recursive}: DirectoryDi
         multiple: multiple,
         defaultPath: await downloadDir(),
     });
-
+    var paths: string[] = [];
 
     if (Array.isArray(selected)) {
 
@@ -51,7 +51,8 @@ export default async function directoryDialog({multiple, recursive}: DirectoryDi
         console.log(entries);
 
         console.log('Paths of the selected directory:');
-        console.log(getPaths(entries));
+        paths = getPaths(entries);
+        console.log(paths);
 
     } else if (selected === null) {
         console.log('user cancelled');
@@ -64,6 +65,9 @@ export default async function directoryDialog({multiple, recursive}: DirectoryDi
         console.log(entries);
         console.log('Paths of the selected directory:');
 
-        console.log(getPaths(entries));
+        paths = getPaths(entries);
+        console.log(paths);
     }
+
+    return paths;
 }
