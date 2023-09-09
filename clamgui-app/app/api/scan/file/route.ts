@@ -3,8 +3,11 @@ import { headers } from 'next/headers';
 
 export async function POST(request: NextRequest) {
 
-    const body = await request.body;
-    console.log(body);
+    const json = await request.json();
+
+    if(json) {
+        console.log(json);
+    }
     
     return NextResponse.json({url: request.nextUrl})
 }
