@@ -59,7 +59,7 @@ export default function UploadForm() {
                 <button className="px-3 rounded-full font-semibold bg-violet-50 text-violet-700 hover:bg-violet-100" onClick={() => uploadPaths(paths)}>Scan</button>
             </div>
             <div className="flex flex-row justify-center">
-            <button className="px-3 rounded-full font-semibold bg-violet-50 text-violet-700 hover:bg-violet-100" onClick={() => recursionToggle()}>Recursive</button>
+                <button className="px-3 rounded-full font-semibold bg-violet-50 text-violet-700 hover:bg-violet-100" onClick={() => recursionToggle()}>Recursive</button>
             </div>
         </div>
     )
