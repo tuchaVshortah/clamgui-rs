@@ -1,4 +1,4 @@
-import { Footer, Navbar } from '@/components/navigation'
+import { Footer } from '@/components/navigation'
 import './globals.css'
 
 export const metadata = {
@@ -14,10 +14,9 @@ export default function RootLayout({
   return (
     <html lang="en">   
       <body className='flex flex-col min-h-screen'>
-          <Navbar/>
-            {children}
-          <Footer/>
-        </body>
+        {children}
+        <Footer/>
+      </body>
     </html>
   )
 }
